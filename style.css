@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span, a, label {
+    display: inline-block;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+.box {
+    width: 48%;
+    position: relative;
+}
+.date {
+    background-color: white;
+    position: absolute;
+    left: 30px;
+    top: 35px;
+    width: 75px;
+    height: 75px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    font-weight: bold;
+}
+.photo {
+    border-radius: 30px;
+}
+.content {
+    background-color: gold;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    padding: 25px 35px;
+    border-radius: 24px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.useri {
+    color: green;
+    margin-right: 5px;
+}
+.text {
+    margin-bottom: 10px;
+}
+.link {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 19px;
+    display: inline-flex;
+    align-items: center;
+}
+.circle {
+    background-color: lime;
+    width: 27px;
+    height: 27px;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+@media(max-width:1250px){
+    .box {
+        max-width: 800px;
+        width: auto;
+        margin: auto;
+    }
+    .boxes {
+        row-gap: 110px;
+    }
+}
+@media(max-width:650px){
+    .content {
+        position: static;
+        transform: translateX(0);
+        width: auto;
+        border-radius: 15px;
+    }
+    .boxes {
+        row-gap: 20px;
+    }
+    .photo {
+        border-radius: 15px;
+    }
+}
+@media(max-width:470px){
+    .boxes {
+        padding: 10px;
+    }
+    .content {
+        padding: 15px;
+        text-align: center;
+    }
+    .date {
+        position: static;
+        background-color: gold;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    .box {
+        text-align: center;
+    }
+    .photo {
+        margin: 7px 0;
+    }
+    .date br {
+        display: none;
+    }
+}
